@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:beans="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+    <!--1.配置User对象创建-->
+<!--    <bean id="user" class="spring5.User"></bean>-->
+    <!--2.set方法注入属性-->
+    <bean id="user" class="spring5.User">
+        <!--使用property完成属性注入
+            name:类的属性名称
+            value：向属性注入的值
+        -->
+        <property name="uName" value="userA"></property>
+    </bean>
+</beans>

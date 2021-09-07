@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:beans="http://www.springframework.org/schema/beans"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                           https://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+       <!-- 1.提取list集合类型属性注入   -->
+        <util:list id="bookList">
+            <value>大学英语</value>
+            <value>大学数学</value>
+            <value>大学物理</value>
+        </util:list>
+        <!-- 2.创建对象 注入      -->
+        <bean id="book" class="spring5.testdemo.Book">
+            <property name="list" ref="bookList"></property>
+        </bean>
+
+</beans>
