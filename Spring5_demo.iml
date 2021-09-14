@@ -77,7 +77,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="druid-1.2.6" level="project" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/lib/druid-1.2.6.jar!/" />
@@ -88,5 +88,24 @@
     </orderEntry>
     <orderEntry type="library" name="mysql-connector-java-8.0.16" level="project" />
     <orderEntry type="library" name="spring-aop-5.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="aspectj-1.9.6" level="project" />
+    <orderEntry type="library" name="com.springsource.net.sf.cglib-2.2.0" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/com.springsource.net.sf.cglib-2.2.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/com.springsource.org.aopalliance-1.0.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/aspectj-1.9.6.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/lib/aspectj-1.9.6.jar!/files/doc/runtime-apidocs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib/aspectj-1.9.6.jar!/files/doc/examples" />
+          <root url="jar://$MODULE_DIR$/lib/aspectj-1.9.6.jar!/files/doc/examples/ltw" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
